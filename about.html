@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — GroundTruth</title>
+<meta name="description" content="GroundTruth is built and operated by the Extension Foundation, a 501(c)(3) nonprofit, to bring cited, land-grant-verified answers to private-sector agriculture — with revenue reinvested in the Foundation's public mission.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#2F5233"/>
+        <path d="M6 20 L14 10 L18 15 L26 6" stroke="#B9862E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="26" cy="6" r="3" fill="#1C6E8C"/>
+      </svg>
+      GroundTruth
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Product</a></li>
+      <li><a href="evaluation.html">Independent Evaluation</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Talk to us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">About GroundTruth</div>
+      <h1>We spent years building the boring infrastructure.</h1>
+      <p class="lede">GroundTruth is a commercial product built on top of the data infrastructure originally developed for the Cooperative Extension System — a public research network that answers agricultural questions for free, with citations, at land-grant universities across the country. We took the part of that system private-sector teams kept asking for and packaged it as an API.</p>
+    </div>
+  </section>
+
+  <div class="strata"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span></div>
+
+  <section>
+    <div class="wrap about-grid">
+      <div>
+        <h2>How we got here</h2>
+        <p>GroundTruth is built and operated by the <strong>Extension Foundation</strong>, a 501(c)(3) nonprofit that has spent years building shared infrastructure, professional development, and applied AI research for the Cooperative Extension System. The Foundation's work exists so that no single institution has to solve the same data or technology problem alone.</p>
+        <p>That work already includes ExtensionBot, a citation-grounded conversational AI used directly by the public, and MERLIN, the data infrastructure that aggregates and validates research content from land-grant institutions nationwide to keep it current.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="yr">Phase 1</span>
+          <h3>The aggregation network</h3>
+          <p>A crawling and validation pipeline built by the Extension Foundation to keep a public Extension chatbot grounded in current, source-cited research from institutions nationwide.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="yr">Phase 2</span>
+          <h3>The retrieval layer matures</h3>
+          <p>State-aware weighting, honest no-match handling, and a citation format specific enough that a grower could click through and check it themselves.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="yr">Phase 3</span>
+          <h3>Private-sector demand</h3>
+          <p>Ag-tech teams asked for API access to the same grounded answers, for use in products the public network was never built to serve directly.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="yr">Phase 4</span>
+          <h3>GroundTruth, spun out</h3>
+          <p>A dedicated product and brand, built to fund the Foundation's public mission rather than compete with it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strata"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span></div>
+
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Where the revenue goes</div>
+        <h2>A commercial product, in service of a nonprofit mission.</h2>
+        <p>The Extension Foundation doesn't operate GroundTruth to build a separate bottom line. Revenue from GroundTruth is directed back into the Foundation's core work — the same programs that built the data network GroundTruth runs on, and the same ones that keep Extension's public tools free for the institutions and communities they were built for.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Professional development</h3>
+          <p>Training and support that helps Extension educators across the country adopt new data practices and technology without starting from zero at every institution.</p>
+        </div>
+        <div class="value-card">
+          <h3>Shared tools &amp; infrastructure</h3>
+          <p>Continued development of ExtensionBot, MERLIN, and the crawler network they depend on — kept free at the point of use for land-grant institutions and the public.</p>
+        </div>
+        <div class="value-card">
+          <h3>Applied AI research</h3>
+          <p>Ongoing research into how AI can responsibly serve Cooperative Extension's mission, rather than research funded only when a grant cycle allows it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">What we hold onto</div>
+        <h2>The rules we don't bend for a sales cycle.</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Cite or say nothing</h3>
+          <p>An answer without a source isn't a feature we ship. If the network can't back a claim, the honest answer is "we don't know" — not a fluent guess.</p>
+        </div>
+        <div class="value-card">
+          <h3>The source stays visible</h3>
+          <p>Citations aren't a tooltip you have to hunt for. They're rendered as part of the answer, every time, in every integration.</p>
+        </div>
+        <div class="value-card">
+          <h3>Regional truth over average truth</h3>
+          <p>An answer that's correct on average and wrong for the grower's actual state isn't useful. Localization isn't a nice-to-have layer — it's load-bearing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Team</div>
+        <h2>Small team. No handoffs.</h2>
+        <p>GroundTruth is run by a small team with a background in agricultural data infrastructure and Extension partnerships — the people who built the pipeline are still the people who maintain it.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <img class="team-avatar" src="images/aaron-weibe.png" alt="Dr. Aaron Weibe">
+          <h3>Dr. Aaron Weibe</h3>
+          <span class="role">Director of Technology Services and Communications, Extension Foundation</span>
+          <p>Directs technology services and communications for the Extension Foundation.</p>
+        </div>
+        <div class="team-card">
+          <img class="team-avatar" src="images/mark-locklear.png" alt="Mark Locklear">
+          <h3>Mark Locklear</h3>
+          <span class="role">Digital Systems &amp; IT Operations Manager, Extension Foundation</span>
+          <p>Runs the digital systems and IT operations behind the Foundation's shared infrastructure.</p>
+        </div>
+        <div class="team-card">
+          <img class="team-avatar" src="images/david-warren.png" alt="Dr. David Warren">
+          <h3>David Warren</h3>
+          <span class="role">Senior Director of Integrated Digital Strategies, Oklahoma State &amp; AI Program Leader, Extension Foundation</span>
+          <p>Leads integrated digital strategy for OSU's Agriculture Division and directs applied AI programs for the Extension Foundation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark">
+    <div class="wrap">
+      <div class="cta-band" style="background:transparent; padding:0;">
+        <div>
+          <h2>Have a use case in mind?</h2>
+          <p class="ink-soft-dark">Tell us what you're building. We'll tell you honestly whether we're a fit.</p>
+        </div>
+        <a href="mailto:hello@groundtruth.ag" class="btn btn-primary">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">GroundTruth</div>
+        <p class="footer-note">A verified agricultural knowledge layer, built on the same data network behind ExtensionBot for the Cooperative Extension System.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Product</a></li>
+        <li><a href="evaluation.html">Independent Evaluation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GroundTruth. Fictitious product for illustrative purposes.</span>
+      <span>hello@groundtruth.ag</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

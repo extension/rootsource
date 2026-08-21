@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GroundTruth — Agricultural answers, cited to the source</title>
+<meta name="description" content="GroundTruth is an API and embeddable widget that brings citation-backed, land-grant-verified agricultural answers into ag-tech products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#2F5233"/>
+        <path d="M6 20 L14 10 L18 15 L26 6" stroke="#B9862E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="26" cy="6" r="3" fill="#1C6E8C"/>
+      </svg>
+      GroundTruth
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Product</a></li>
+      <li><a href="evaluation.html">Independent Evaluation</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Talk to us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">API &amp; embeddable widget</div>
+        <h1>Every agricultural answer traced back to the source</h1>
+        <p class="lede">GroundTruth puts research-grade, land-grant-verified agricultural knowledge behind a simple API — so your product can answer growers' questions without guessing, and show exactly where each answer came from.</p>
+        <div class="btn-row">
+          <a href="mailto:hello@groundtruth.ag" class="btn btn-primary">Request API access</a>
+          <a href="evaluation.html" class="btn btn-ghost">See the independent evaluation</a>
+        </div>
+      </div>
+
+      <div class="hero-demo">
+        <div class="demo-card">
+          <svg class="stamp-badge" viewBox="0 0 120 120" aria-hidden="true">
+            <circle cx="60" cy="60" r="52" fill="none" stroke="#1C6E8C" stroke-width="2" stroke-dasharray="4 4"/>
+            <circle cx="60" cy="60" r="42" fill="none" stroke="#1C6E8C" stroke-width="1"/>
+            <text x="60" y="52" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" fill="#1C6E8C" letter-spacing="1">SOURCE</text>
+            <text x="60" y="65" text-anchor="middle" font-family="Fraunces" font-size="13" fill="#124A5C" font-weight="600">VERIFIED</text>
+            <text x="60" y="78" text-anchor="middle" font-family="IBM Plex Mono" font-size="7" fill="#1C6E8C">214,000+ docs</text>
+          </svg>
+          <div class="demo-card-head">
+            <span>groundtruth · query</span>
+            <div class="dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="demo-query"><span class="who">operator@fieldline &gt;</span> Can I tank-mix Bt and spinosad for corn earworm without harming pollinators?</div>
+          <div class="demo-answer">
+            Yes, under a non-chemical IPM program these can be rotated but shouldn't be tank-mixed in the same application window near bloom<span class="cite">1</span>. Apply in early evening when pollinator activity is low, and confirm state-specific label restrictions for your crop stage<span class="cite">2</span>. Rotating modes of action also cuts resistance risk in corn earworm populations<span class="cite">3</span>.
+          </div>
+          <div class="demo-sources">
+            <span class="source-chip"><span class="chip-num">1</span>extension.okstate.edu</span>
+            <span class="source-chip"><span class="chip-num">2</span>ipm.extension.org</span>
+            <span class="source-chip"><span class="chip-num">3</span>crop protection network</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strata"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span></div>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Why this matters</div>
+        <h2>A confident wrong answer costs more than no answer.</h2>
+        <p>General-purpose AI is fluent on agricultural topics and wrong often enough to matter — wrong on regional pest pressure, wrong on label restrictions, wrong on the difference between what works in Iowa and what works in Georgia. In production, "confident" and "correct" are not the same claim.</p>
+      </div>
+      <div class="contrast-grid">
+        <div class="contrast-card bad">
+          <span class="tag bad">Generic AI</span>
+          <h3>"Brown spots in your bermudagrass are usually fungal — try a broad-spectrum fungicide."</h3>
+          <p>No source. No region. No way for the grower — or you — to check the claim before it's acted on in a field.</p>
+        </div>
+        <div class="contrast-card good">
+          <span class="tag good">GroundTruth</span>
+          <h3>"In Oklahoma, this pattern matches Spring Dead Spot — confirm with a soil potassium test before treating.<span class="cite">1</span>"</h3>
+          <div class="citation-sources">
+            <span class="source-chip"><span class="chip-num">1</span>extension.okstate.edu/spring-dead-spot</span>
+          </div>
+          <p>Localized to the grower's state, grounded in a named Extension publication, and honest when the answer needs a soil test rather than a guess.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">How it works</div>
+        <h2>Three layers between your product and 50+ years of Extension research.</h2>
+        <p>GroundTruth is built on the same aggregation infrastructure that powers ExtensionBot for the Cooperative Extension System — continuously refreshed, never a one-time export.</p>
+      </div>
+      <div class="pipeline">
+        <div class="pipeline-step">
+          <span class="layer-label">Layer 1 — Sources</span>
+          <h3>A living network of land-grant content</h3>
+          <p>Fact sheets, publications, and advisory answers pulled continuously from land-grant Extension institutions across the country, plus vetted partners like the Crop Protection Network.</p>
+        </div>
+        <div class="pipeline-step">
+          <span class="layer-label">Layer 2 — Retrieval &amp; validation</span>
+          <h3>Grounded, not generated from memory</h3>
+          <p>Every query is matched against verified source documents first. The model answers from what's retrieved — and says so plainly when nothing in the network answers the question.</p>
+        </div>
+        <div class="pipeline-step">
+          <span class="layer-label">Layer 3 — Your product</span>
+          <h3>Cited answers, your interface</h3>
+          <p>Call the API directly and render answers, citations, and confidence in your own UI — or drop in the widget and go live in an afternoon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strata"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span></div>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">What you get</div>
+        <h2>Built for the parts of AI that make agronomists nervous.</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Cited by default</h3>
+          <p>Every answer carries source links a grower or advisor can open and check — not a bibliography bolted on after the fact.</p>
+        </div>
+        <div class="feature">
+          <h3>State-aware localization</h3>
+          <p>Weighted by region, so a question from Georgia and the same question from Minnesota get different, correct answers.</p>
+        </div>
+        <div class="feature">
+          <h3>Model-agnostic</h3>
+          <p>The underlying LLM can be upgraded or swapped without touching your integration — you're building on the retrieval layer, not one model's quirks.</p>
+        </div>
+        <div class="feature">
+          <h3>Honest no-match handling</h3>
+          <p>When the network doesn't have a confident answer, GroundTruth says so and routes to a local Extension office rather than filling the gap with a guess.</p>
+        </div>
+        <div class="feature">
+          <h3>Continuously refreshed</h3>
+          <p>Nightly incremental crawls mean new bulletins and updated guidance reach the API automatically, not on your next data refresh cycle.</p>
+        </div>
+        <div class="feature">
+          <h3>API or widget</h3>
+          <p>Full control via REST API for custom experiences, or an embeddable chat widget when you want something live fast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVALUATION TEASERS ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Independently evaluated</div>
+        <h2>Benchmarked and field-tested, under a different name.</h2>
+        <p>GroundTruth runs on the same retrieval and citation infrastructure as ExtensionBot, the Extension Foundation's public agricultural chatbot — independently benchmarked against 26 other AI tools and field-tested by working Extension scientists. Here's what they found.</p>
+      </div>
+      <div class="case-teaser-grid teaser-grid-3">
+        <a href="evaluation.html#agribench" class="case-card">
+          <span class="company">AgriBench Consortium</span>
+          <h3>Ranked against 26 other chatbots, including ChatGPT and Gemini</h3>
+          <div class="metric">#2 of 6</div>
+          <p>among agriculture-specific AI models, in the first published AgriBench leaderboard.</p>
+          <span class="read-more">Read the evaluation →</span>
+        </a>
+        <a href="evaluation.html#battle-of-the-bots" class="case-card">
+          <span class="company">Grow IWM · weed scientists</span>
+          <h3>The only chatbot that consistently cited its sources</h3>
+          <div class="metric">80%</div>
+          <p>top score of four bots tested, on herbicide resistance questions.</p>
+          <span class="read-more">Read the evaluation →</span>
+        </a>
+        <a href="evaluation.html#animal-frontiers" class="case-card">
+          <span class="company">Animal Frontiers · peer-reviewed</span>
+          <h3>ChatGPT gave a different answer nearly every time it was asked</h3>
+          <div class="metric">0.2–99.8%</div>
+          <p>swing in GPT accuracy across model versions, on the exact same question.</p>
+          <span class="read-more">Read the evaluation →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2>Bring verified agricultural intelligence into your product.</h2>
+          <p>API access starts with a scoped pilot against your own use case — no long procurement cycle required.</p>
+        </div>
+        <a href="mailto:hello@groundtruth.ag" class="btn btn-primary">Request API access</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">GroundTruth</div>
+        <p class="footer-note">A verified agricultural knowledge layer, built on the same data network behind ExtensionBot for the Cooperative Extension System.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Product</a></li>
+        <li><a href="evaluation.html">Independent Evaluation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GroundTruth. Fictitious product for illustrative purposes.</span>
+      <span>hello@groundtruth.ag</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

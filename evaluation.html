@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Independent Evaluation — GroundTruth</title>
+<meta name="description" content="Independent, third-party research and field-expert reviews of ExtensionBot, built on the same retrieval and citation infrastructure behind GroundTruth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#2F5233"/>
+        <path d="M6 20 L14 10 L18 15 L26 6" stroke="#B9862E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="26" cy="6" r="3" fill="#1C6E8C"/>
+      </svg>
+      GroundTruth
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Product</a></li>
+      <li><a href="evaluation.html" class="active">Independent Evaluation</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Talk to us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Independent evaluation</div>
+      <h1>What researchers and scientists say.</h1>
+      <p class="lede">GroundTruth runs on the same retrieval and citation infrastructure behind ExtensionBot, the Extension Foundation's public agricultural chatbot. Here's what independent researchers, a multi-industry AI benchmark, and Extension weed scientists found when they tested ExtensionBot against real questions.</p>
+    </div>
+  </section>
+
+  <div class="strata"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span></div>
+
+  <!-- ============ AGRIBENCH ============ -->
+  <section class="case-study" id="agribench">
+    <div class="wrap">
+      <div class="case-head">
+        <div>
+          <div class="eyebrow">Multi-industry AI benchmark</div>
+          <h2>Ranked among the top agriculture-specific models in the first AgriBench results</h2>
+          <p>The Extension Foundation is a founding member of the AgriBench Consortium, housed at the University of Illinois Center for Digital Agriculture alongside Bayer Crop Science, John Deere, Microsoft, and Digital Green, with support from the Gates Foundation and USDA-NIFA. The consortium's first published leaderboard scored ExtensionBot's answers blind against 26 other chatbots, including general-purpose models like ChatGPT and Gemini.</p>
+        </div>
+        <div class="case-stats">
+          <div><span class="num">#2 of 6</span><span class="lbl">agriculture-specific chatbots</span></div>
+          <div><span class="num">#6 of 27</span><span class="lbl">all chatbots, incl. ChatGPT &amp; Gemini</span></div>
+          <div><span class="num">#1 / #4</span><span class="lbl">ag-specific / overall, in horticulture</span></div>
+        </div>
+      </div>
+
+      <div class="case-body">
+        <div class="col">
+          <span class="k">What was measured</span>
+          <p>Narrative answer quality across agricultural topics, scored blind by the AgriBench Consortium against 26 other chatbots — nothing about the questions was tailored to ExtensionBot.</p>
+        </div>
+        <div class="col">
+          <span class="k">What wasn't measured</span>
+          <p>This round of AgriBench didn't score citations or hallucination rate — the two things ExtensionBot is built around. That's the strength this benchmark didn't get to credit.</p>
+        </div>
+        <div class="col">
+          <span class="k">Why it matters</span>
+          <p>Even without credit for sourcing, it placed ahead of most agriculture-specific tools and competitive with general-purpose models built at far larger scale.</p>
+        </div>
+      </div>
+
+      <blockquote class="pull">
+        "These results validate the competitiveness of ExtensionBot relative to major commercial and foundation-model systems, particularly in areas where Extension has strong, research-based content."
+        <cite>— Extension Foundation, <a href="https://connect.extension.org/blog/extensionbot-highly-ranked-in-first-ever-agribench-results">Connect, December 2025</a></cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ BATTLE OF THE BOTS ============ -->
+  <section class="case-study" id="battle-of-the-bots">
+    <div class="wrap">
+      <div class="case-head">
+        <div>
+          <div class="eyebrow">Field-expert review · weed science</div>
+          <h2>The only chatbot that consistently showed its sources</h2>
+          <p>Four practicing Extension weed scientists tested ExtensionBot against ChatGPT, DeepSeek, and Google Gemini on 24 realistic farmer questions spanning integrated weed management, herbicide selection, resistance, and weed biology.</p>
+        </div>
+        <div class="case-stats">
+          <div><span class="num">80%</span><span class="lbl">top score of 4 bots, herbicide resistance</span></div>
+          <div><span class="num">2×</span><span class="lbl">better on herbicide-specific management</span></div>
+          <div><span class="num">Only bot</span><span class="lbl">that consistently linked its sources</span></div>
+        </div>
+      </div>
+
+      <div class="case-body">
+        <div class="col">
+          <span class="k">What was measured</span>
+          <p>24 real-world weed management questions — some simple, some multi-step, some with the misspellings a real farmer would type — scored excellent to poor by four Extension weed scientists.</p>
+        </div>
+        <div class="col">
+          <span class="k">Where it led</span>
+          <p>Herbicide resistance and herbicide-specific management — the two categories where a confidently wrong answer costs a grower an entire season.</p>
+        </div>
+        <div class="col">
+          <span class="k">What went uncredited elsewhere</span>
+          <p>ChatGPT and DeepSeek rarely cited sources at all. When researchers checked an uncited claim from DeepSeek on herbicide cross-resistance, it was simply wrong.</p>
+        </div>
+      </div>
+
+      <blockquote class="pull">
+        "Only ExtensionBot consistently linked to the sources of its information, allowing our testers to learn more about a topic, as well as verify the bot's accuracy."
+        <cite>— Emily Unglesbee, <a href="https://growiwm.org/battle-of-the-bots-ai-takes-on-weed-management-questions/">Grow IWM, March 2026</a></cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ ANIMAL FRONTIERS ============ -->
+  <section class="case-study" id="animal-frontiers">
+    <div class="wrap">
+      <div class="case-head">
+        <div>
+          <div class="eyebrow">Peer-reviewed research · Animal Frontiers, Oxford University Press</div>
+          <h2>Asked the same question 1,000 times, ChatGPT gave 1,000 different answers</h2>
+          <p>Researchers from Texas A&amp;M AgriLife Extension and Oklahoma State University tested three OpenAI models on a basic stocking-rate question — asked identically 1,000 times per model, for two different counties. Depending on which GPT version answered, accuracy on the exact same question swung from under 1% to over 99%.</p>
+        </div>
+        <div class="case-stats">
+          <div><span class="num">0.2–99.8%</span><span class="lbl">GPT accuracy range, same question</span></div>
+          <div><span class="num">360,000+</span><span class="lbl">Extension documents in the corpus</span></div>
+          <div><span class="num">Editable</span><span class="lbl">wrong answers get corrected, not repeated</span></div>
+        </div>
+      </div>
+
+      <div class="case-body">
+        <div class="col">
+          <span class="k">The test</span>
+          <p>"Is 5 acres per cow/calf pair a sufficient stocking rate?" — asked 1,000 times per model, for a semi-arid Texas county and a wetter Florida county with very different correct answers.</p>
+        </div>
+        <div class="col">
+          <span class="k">The finding</span>
+          <p>GPT-4 and GPT-4o essentially inverted each other's answers between model versions — both delivered with the same fluent confidence, only one actually consistent with reality.</p>
+        </div>
+        <div class="col">
+          <span class="k">The contrast</span>
+          <p>ExtensionBot answered correctly for the region it had data on, and plainly lacked coverage for the region it didn't — rather than guessing either way.</p>
+        </div>
+      </div>
+
+      <blockquote class="pull">
+        "Specialized AI platforms trained on region-specific extension publications can offer more accurate and context-relevant advice to producers compared to generalized AI tools like ChatGPT."
+        <cite>— Prestegaard-Wilson &amp; Vitale, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11700584/">Animal Frontiers, January 2025</a></cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ PRESS MENTION ============ -->
+  <section class="section-alt">
+    <div class="wrap" style="max-width:760px">
+      <div class="eyebrow">In the press</div>
+      <blockquote class="pull" style="margin-top:0">
+        "This is not an effort to replace people at all, but a way to broaden our reach and be able to handle more volume of questions than we could handle otherwise."
+        <cite>— Jayson Lusk, Dean of Agriculture, Oklahoma State University, <a href="https://www.brownfieldagnews.com/news/extensionbot-here-to-help/">Brownfield Ag News, May 2024</a></cite>
+      </blockquote>
+      <p style="margin-top:20px">ExtensionBot is backed by a partnership of more than 20 land-grant universities, the Extension Foundation, and the USDA — the same network GroundTruth's retrieval layer draws from.</p>
+    </div>
+  </section>
+
+  <section class="section-dark">
+    <div class="wrap">
+      <div class="cta-band" style="background:transparent; padding:0;">
+        <div>
+          <h2>Want to see how it holds up against your own use case?</h2>
+          <p class="ink-soft-dark">A scoped pilot is the fastest way to know if this fits — measured against your own questions, not a published benchmark.</p>
+        </div>
+        <a href="mailto:hello@groundtruth.ag" class="btn btn-primary">Start a pilot</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">GroundTruth</div>
+        <p class="footer-note">A verified agricultural knowledge layer, built on the same data network behind ExtensionBot for the Cooperative Extension System.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Product</a></li>
+        <li><a href="evaluation.html">Independent Evaluation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GroundTruth. Fictitious product for illustrative purposes; the linked research and press coverage referenced here is real.</span>
+      <span>hello@groundtruth.ag</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
