@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — GroundTruth</title>
-<meta name="description" content="GroundTruth is built and operated by the Extension Foundation, a 501(c)(3) nonprofit, to bring cited, land-grant-verified answers to private-sector agriculture — with revenue reinvested in the Foundation's public mission.">
+<title>About — RootSource</title>
+<meta name="description" content="RootSource is built and operated by the Extension Foundation, a 501(c)(3) nonprofit, to bring cited, land-grant-verified answers to private-sector agriculture — with revenue reinvested in the Foundation's public mission.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -15,11 +15,16 @@
   <nav class="nav">
     <a href="index.html" class="brand">
       <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect width="32" height="32" rx="7" fill="#2F5233"/>
-        <path d="M6 20 L14 10 L18 15 L26 6" stroke="#B9862E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <circle cx="26" cy="6" r="3" fill="#1C6E8C"/>
+        <defs><clipPath id="brandRootClip-about"><rect width="32" height="32" rx="7"/></clipPath></defs>
+        <g clip-path="url(#brandRootClip-about)">
+          <rect width="32" height="32" fill="#1B2E1E"/>
+          <rect y="0" width="32" height="9" fill="#B9862E"/>
+          <rect y="9" width="32" height="7" fill="#8F6520"/>
+        </g>
+        <path d="M16 3 L16 20 M15 9 L10 12 M17 12 L23 15 M16 20 L10 26 M16 20 L16 28 M16 20 L22 26" stroke="#FBF9F3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="16" cy="3" r="2.4" fill="#1C6E8C"/>
       </svg>
-      GroundTruth
+      RootSource
     </a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
     <ul class="nav-links" id="navLinks">
@@ -35,9 +40,9 @@
 
   <section class="page-hero">
     <div class="wrap">
-      <div class="eyebrow">About GroundTruth</div>
+      <div class="eyebrow">About RootSource</div>
       <h1>We spent years building the boring infrastructure.</h1>
-      <p class="lede">GroundTruth is a commercial product built on top of the data infrastructure originally developed for the Cooperative Extension System — a public research network that answers agricultural questions for free, with citations, at land-grant universities across the country. We took the part of that system private-sector teams kept asking for and packaged it as an API.</p>
+      <p class="lede">RootSource is a commercial product built on top of the data infrastructure originally developed for the Cooperative Extension System — a public research network that answers agricultural questions for free, with citations, at land-grant universities across the country. We took the part of that system private-sector teams kept asking for and packaged it as an API.</p>
     </div>
   </section>
 
@@ -47,7 +52,7 @@
     <div class="wrap about-grid">
       <div>
         <h2>How we got here</h2>
-        <p>GroundTruth is built and operated by the <strong>Extension Foundation</strong>, a 501(c)(3) nonprofit that has spent years building shared infrastructure, professional development, and applied AI research for the Cooperative Extension System. The Foundation's work exists so that no single institution has to solve the same data or technology problem alone.</p>
+        <p>RootSource is built and operated by the <strong>Extension Foundation</strong>, a 501(c)(3) nonprofit that has spent years building shared infrastructure, professional development, and applied AI research for the Cooperative Extension System. The Foundation's work exists so that no single institution has to solve the same data or technology problem alone.</p>
         <p>That work already includes ExtensionBot, a citation-grounded conversational AI used directly by the public, and MERLIN, the data infrastructure that aggregates and validates research content from land-grant institutions nationwide to keep it current.</p>
       </div>
       <div class="timeline">
@@ -68,7 +73,7 @@
         </div>
         <div class="timeline-item">
           <span class="yr">Phase 4</span>
-          <h3>GroundTruth, spun out</h3>
+          <h3>RootSource, spun out</h3>
           <p>A dedicated product and brand, built to fund the Foundation's public mission rather than compete with it.</p>
         </div>
       </div>
@@ -82,7 +87,7 @@
       <div class="section-head">
         <div class="eyebrow">Where the revenue goes</div>
         <h2>A commercial product, in service of a nonprofit mission.</h2>
-        <p>The Extension Foundation doesn't operate GroundTruth to build a separate bottom line. Revenue from GroundTruth is directed back into the Foundation's core work — the same programs that built the data network GroundTruth runs on, and the same ones that keep Extension's public tools free for the institutions and communities they were built for.</p>
+        <p>The Extension Foundation doesn't operate RootSource to build a separate bottom line. Revenue from RootSource is directed back into the Foundation's core work — the same programs that built the data network RootSource runs on, and the same ones that keep Extension's public tools free for the institutions and communities they were built for.</p>
       </div>
       <div class="values-grid">
         <div class="value-card">
@@ -129,7 +134,7 @@
       <div class="section-head">
         <div class="eyebrow">Team</div>
         <h2>Small team. No handoffs.</h2>
-        <p>GroundTruth is run by a small team with a background in agricultural data infrastructure and Extension partnerships — the people who built the pipeline are still the people who maintain it.</p>
+        <p>RootSource is run by a small team with a background in agricultural data infrastructure and Extension partnerships — the people who built the pipeline are still the people who maintain it.</p>
       </div>
       <div class="team-grid">
         <div class="team-card">
@@ -172,7 +177,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand">GroundTruth</div>
+        <div class="footer-brand">RootSource</div>
         <p class="footer-note">A verified agricultural knowledge layer, built on the same data network behind ExtensionBot for the Cooperative Extension System.</p>
       </div>
       <ul class="footer-links">
@@ -183,8 +188,8 @@
       </ul>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 GroundTruth. Fictitious product for illustrative purposes.</span>
-      <span>hello@groundtruth.ag</span>
+      <span>© 2026 RootSource. Fictitious product for illustrative purposes.</span>
+      <span>hello@rootsource.ag</span>
     </div>
   </div>
 </footer>

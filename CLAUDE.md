@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A static, no-build marketing website for "GroundTruth" — a fictitious product (see footer disclaimer: "Fictitious product for illustrative purposes") for an agricultural-answers API/widget. There is no backend, no build tooling, no package manager, and no test suite — just HTML, one CSS file, and one small JS file.
+A static, no-build marketing website for "RootSource" — a fictitious product (see footer disclaimer: "Fictitious product for illustrative purposes") for an agricultural-answers API/widget. There is no backend, no build tooling, no package manager, and no test suite — just HTML, one CSS file, and one small JS file.
 
 ## Running locally
 
