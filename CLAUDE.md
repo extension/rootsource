@@ -8,23 +8,26 @@ A static, no-build marketing website for "RootSource" — a fictitious product (
 
 ## Running locally
 
-There is no build step. Open the HTML files directly in a browser, or serve the directory so relative links/fonts resolve correctly:
+There is no build step. Pages use clean URLs (`/about/`, not `/about.html`), which requires serving over HTTP rather than opening files directly — a `file://` path won't resolve the root-relative asset/nav links:
 
 ```
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000/index.html`.
+Then visit `http://localhost:8000/`.
 
 ## Structure
 
-- `index.html` — product/home page
-- `case-studies.html` — two case studies (Fieldline Robotics, Harvestwise), each an anchor target (`#fieldline`, `#harvestwise`) linked from the home page's case-study teasers
-- `about.html` — company/origin story and team
+- `index.html` — product/home page, served at `/`
+- `about/index.html` — company/origin story and team, served at `/about/`
+- `contact/index.html` — contact page, served at `/contact/`
+- `evaluation/index.html` — independent evaluation write-up with anchor targets (`#agribench`, `#battle-of-the-bots`, `#animal-frontiers`) linked from the home page's case-card teasers, served at `/evaluation/`
 - `styles.css` — single stylesheet shared by all pages
 - `script.js` — single behavior: mobile nav menu toggle (`#navToggle` / `#navLinks`)
 
-All three pages share the same header/nav and footer markup verbatim (copy-paste, not templated — there's no include mechanism). When changing nav links, footer content, or the brand SVG mark, update all three HTML files identically.
+Every page — regardless of its own path depth — links to CSS/JS/images and to other pages with root-relative paths (`/styles.css`, `/script.js`, `/images/...`, `/`, `/about/`, `/contact/`, `/evaluation/`), never relative ones. This is what lets `about/index.html` sit one directory deep and still resolve assets correctly.
+
+All four pages share the same header/nav and footer markup verbatim (copy-paste, not templated — there's no include mechanism). When changing nav links, footer content, or the brand SVG mark, update all four HTML files identically.
 
 ## Design system (styles.css)
 
