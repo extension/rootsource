@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Try it out — RootSource</title>
+<meta name="description" content="Talk to RootSource directly. Ask an agricultural question and see a cited, source-backed answer in real time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="/" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><clipPath id="brandRootClip-tryitout"><rect width="32" height="32" rx="7"/></clipPath></defs>
+        <g clip-path="url(#brandRootClip-tryitout)">
+          <rect width="32" height="32" fill="#1B2E1E"/>
+          <rect y="0" width="32" height="9" fill="#B9862E"/>
+          <rect y="9" width="32" height="7" fill="#8F6520"/>
+        </g>
+        <path d="M16 3 L16 20 M15 9 L10 12 M17 12 L23 15 M16 20 L10 26 M16 20 L16 28 M16 20 L22 26" stroke="#FBF9F3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="16" cy="3" r="2.4" fill="#1C6E8C"/>
+      </svg>
+      RootSource
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Product</a></li>
+      <li><a href="/try-it-out/" class="active">Try it out</a></li>
+      <li><a href="/evaluation/">Independent Evaluation</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Talk to us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero try-hero">
+    <div class="wrap">
+      <div class="eyebrow">Try it out</div>
+      <h1>Ask it something you'd ask a county agent.</h1>
+    </div>
+  </section>
+
+  <section class="try-embed-section">
+    <div class="try-embed-frame">
+      <div id="ae-chatbot-fullscreen"></div>
+      <script>
+        const ae_widget_config_params = {
+          botname: "RootSource",
+          widget_popup_text: "Hello! How can I help you today?",
+          styles: {
+            "chatbot-brand-primary-color": "#2F5233",
+          },
+        }
+      </script>
+      <script src="https://chat.ask.thiaplatform.ai/static/js/fullscreen-loader.js"></script>
+    </div>
+    <p class="try-embed-note">Like what you see? This same cited-answer layer is available as an API and an embeddable widget. <a href="/contact/" class="read-more">Request API access →</a></p>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">RootSource</div>
+        <p class="footer-note">A verified agricultural knowledge layer, built on the same data network behind ExtensionBot for the Cooperative Extension System.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="/">Product</a></li>
+        <li><a href="/try-it-out/" class="active">Try it out</a></li>
+        <li><a href="/evaluation/">Independent Evaluation</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RootSource &amp; Extension Foundation</span>
+      <span>rootsource@extension.org</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
